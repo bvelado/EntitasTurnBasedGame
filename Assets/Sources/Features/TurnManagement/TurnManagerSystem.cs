@@ -39,6 +39,8 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
             managedUnits.Add(fastestEntity);
             Debug.Log(fastestEntity.unit.name + " // Speed : " + fastestEntity.turnOrder.speed);
         }
+
+        StartTurn();
     }
 
     public void Execute(List<Entity> entities)

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-
     Systems _systems;
 
     void Start()
@@ -27,8 +26,17 @@ public class GameController : MonoBehaviour
 #else
         return new Systems()
 #endif
-            .Add(pool.CreateSystem<CreateUnitsSystem>())
-            .Add(pool.CreateSystem<TurnManagerSystem>())
-            .Add(pool.CreateSystem<ProcessInputSystem>());
+        // Unit generation
+        .Add(pool.CreateSystem<CreateUnitsSystem>())
+
+        // Turn manager
+        .Add(pool.CreateSystem<TurnManagerSystem>())
+
+        // Input
+        .Add(pool.CreateSystem<ProcessInputSystem>())
+
+        // Destroy
+        .Add(pool.CreateSystem<DestroySystem>());
+        
     }
 }
