@@ -12,7 +12,7 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
 
     public TriggerOnEvent trigger
     {
-        get { return Matcher.AllOf(Matcher.Input, Matcher.EndTurn).OnEntityAdded(); }
+        get { return Matcher.AnyOf(Matcher.EndTurn, Matcher.StartTurn).OnEntityAdded(); }
     }
 
     public void SetPool(Pool pool)
@@ -22,6 +22,7 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
 
     public void Initialize()
     {
+        // Trie les unités par vitesse
         for(int i = 0; i < _group.count; i++)
         {
             Entity fastestEntity = _group.GetEntities()[0];
@@ -44,8 +45,10 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
     {
         foreach (var e in entities)
         {
-            Debug.Log("Input caught : " + e.input.intent);
-            if(e.input.intent == InputIntent.FinishTurn)
+            if(e.isStartTurn)
+            {
+                StartTurn();
+            } else if (e.isEndTurn)
             {
                 EndTurn();
             }
@@ -54,6 +57,14 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
 
     void EndTurn()
     {
-        managedUnits[currentUnitIndex].IsEndTurn(true);
+        // Retirer le contrôle à l'Unit
+        managedUnits[currentUnitIndex].IsControlable(false);
+    }
+
+    void StartTurn()
+    {
+        currentUnitIndex++;
+        // Donner contrôle à l'Unit
+        managedUnits[currentUnitIndex].IsControlable(true);
     }
 }

@@ -57,6 +57,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -97,18 +103,19 @@
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas\ReactiveSystem.cs" />
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas\Systems.cs" />
     <Compile Include="Assets\Sources\Enums\InputIntent.cs" />
+    <Compile Include="Assets\Sources\Features\InputManager\ControlableComponent.cs" />
     <Compile Include="Assets\Sources\Features\InputManager\InputComponent.cs" />
     <Compile Include="Assets\Sources\Features\InputManager\ProcessInputSystem.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\EndTurnComponent.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\StartTurnComponent.cs" />
+    <Compile Include="Assets\Sources\Features\TurnManagement\StartTurnSystem.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\TurnManagerComponent.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\TurnManagerSystem.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\TurnOrderComponent.cs" />
-    <Compile Include="Assets\Sources\Features\Units\ControlComponent.cs" />
     <Compile Include="Assets\Sources\Features\Units\CreateUnitsSystem.cs" />
     <Compile Include="Assets\Sources\Features\Units\UnitComponent.cs" />
     <Compile Include="Assets\Sources\Generated\ComponentIds.cs" />
-    <Compile Include="Assets\Sources\Generated\ControlComponentGeneratedExtension.cs" />
+    <Compile Include="Assets\Sources\Generated\ControlableComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\CreateUnitsSystemGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\EndTurnComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\InputComponentGeneratedExtension.cs" />

@@ -1,5 +1,5 @@
 public static class ComponentIds {
-    public const int Control = 0;
+    public const int Controlable = 0;
     public const int EndTurn = 1;
     public const int Input = 2;
     public const int StartTurn = 3;
@@ -10,7 +10,7 @@ public static class ComponentIds {
     public const int TotalComponents = 7;
 
     public static readonly string[] componentNames = {
-        "Control",
+        "Controlable",
         "EndTurn",
         "Input",
         "StartTurn",
@@ -20,7 +20,7 @@ public static class ComponentIds {
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(ControlComponent),
+        typeof(ControlableComponent),
         typeof(EndTurnComponent),
         typeof(InputComponent),
         typeof(StartTurnComponent),
