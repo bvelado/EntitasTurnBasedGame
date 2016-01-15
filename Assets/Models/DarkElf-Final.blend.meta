@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: e203b9d7805eb5e4fabc6e383a687272
+timeCreated: 1452854059
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Crossbow
+    100002: DarkElf
+    100004: //RootNode
+    100006: DarkElfSkeleton
+    100008: Head
+    100010: Hips
+    100012: LeftArm
+    100014: LeftFingerBase
+    100016: LeftFoot
+    100018: LeftForeArm
+    100020: LeftHand
+    100022: LeftHandIndex1
+    100024: LeftLeg
+    100026: LeftShoulder
+    100028: LeftToeBase
+    100030: LeftUpLeg
+    100032: LHipJoint
+    100034: LowerBack
+    100036: LThumb
+    100038: Neck
+    100040: Neck1
+    100042: RHipJoint
+    100044: RightArm
+    100046: RightFingerBase
+    100048: RightFoot
+    100050: RightForeArm
+    100052: RightHand
+    100054: RightHandIndex1
+    100056: RightLeg
+    100058: RightShoulder
+    100060: RightToeBase
+    100062: RightUpLeg
+    100064: RThumb
+    100066: Spine
+    100068: Spine1
+    100070: Weapon_R
+    400000: Crossbow
+    400002: DarkElf
+    400004: //RootNode
+    400006: DarkElfSkeleton
+    400008: Head
+    400010: Hips
+    400012: LeftArm
+    400014: LeftFingerBase
+    400016: LeftFoot
+    400018: LeftForeArm
+    400020: LeftHand
+    400022: LeftHandIndex1
+    400024: LeftLeg
+    400026: LeftShoulder
+    400028: LeftToeBase
+    400030: LeftUpLeg
+    400032: LHipJoint
+    400034: LowerBack
+    400036: LThumb
+    400038: Neck
+    400040: Neck1
+    400042: RHipJoint
+    400044: RightArm
+    400046: RightFingerBase
+    400048: RightFoot
+    400050: RightForeArm
+    400052: RightHand
+    400054: RightHandIndex1
+    400056: RightLeg
+    400058: RightShoulder
+    400060: RightToeBase
+    400062: RightUpLeg
+    400064: RThumb
+    400066: Spine
+    400068: Spine1
+    400070: Weapon_R
+    4300000: DarkElf
+    4300002: Crossbow
+    7400000: Default Take
+    7400002: Dance-lambada
+    7400004: Death-Backwards
+    7400006: idle
+    7400008: Laught
+    7400010: Run-flee
+    7400012: sad
+    7400014: shoot-gun
+    7400016: sleep4-_fixed
+    7400018: Walk-sexy_-_fixed
+    9500000: //RootNode
+    13700000: Crossbow
+    13700002: DarkElf
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

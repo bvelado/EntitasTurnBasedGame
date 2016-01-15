@@ -60,10 +60,20 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Libs\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Libs\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Libs\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Libs\DOTween\DOTween43.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameController.cs" />
-    <Compile Include="Assets\InputController.cs" />
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas.CodeGenerator\Attributes\DontGenerateAttribute.cs" />
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas.CodeGenerator\Attributes\PoolAttribute.cs" />
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas.CodeGenerator\Attributes\SingleEntityAttribute.cs" />
@@ -96,11 +106,21 @@
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas\Pool.cs" />
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas\ReactiveSystem.cs" />
     <Compile Include="Assets\Libs\Entitas-Unity\Entitas\Systems.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\InputController.cs" />
+    <Compile Include="Assets\Sources\Data\RandomNameRes.cs" />
+    <Compile Include="Assets\Sources\Data\ViewRes.cs" />
     <Compile Include="Assets\Sources\Enums\InputIntent.cs" />
+    <Compile Include="Assets\Sources\Extensions\PoolExtensions.cs" />
     <Compile Include="Assets\Sources\Features\Destroy\DestroyComponent.cs" />
     <Compile Include="Assets\Sources\Features\Destroy\DestroySystem.cs" />
     <Compile Include="Assets\Sources\Features\InputManager\InputComponent.cs" />
     <Compile Include="Assets\Sources\Features\InputManager\ProcessInputSystem.cs" />
+    <Compile Include="Assets\Sources\Features\PositionComponent.cs" />
+    <Compile Include="Assets\Sources\Features\Render\AddViewSystem.cs" />
+    <Compile Include="Assets\Sources\Features\Render\RemoveViewSystem.cs" />
+    <Compile Include="Assets\Sources\Features\Render\ResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Features\Render\ViewComponent.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\EndTurnComponent.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\EndTurnSystem.cs" />
     <Compile Include="Assets\Sources\Features\TurnManagement\StartTurnComponent.cs" />
@@ -110,6 +130,7 @@
     <Compile Include="Assets\Sources\Features\Units\ControlableComponent.cs" />
     <Compile Include="Assets\Sources\Features\Units\CreateUnitsSystem.cs" />
     <Compile Include="Assets\Sources\Features\Units\UnitComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\AddViewSystemGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\ComponentIds.cs" />
     <Compile Include="Assets\Sources\Generated\ControlableComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\CreateUnitsSystemGeneratedExtension.cs" />
@@ -119,12 +140,24 @@
     <Compile Include="Assets\Sources\Generated\EndTurnSystemGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\InputComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\Pools.cs" />
+    <Compile Include="Assets\Sources\Generated\PositionComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\ProcessInputSystemGeneratedExtension.cs" />
+    <Compile Include="Assets\Sources\Generated\RemoveViewSystemGeneratedExtension.cs" />
+    <Compile Include="Assets\Sources\Generated\ResourceComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\StartTurnComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\StartTurnSystemGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\TurnManagerSystemGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\TurnOrderComponentGeneratedExtension.cs" />
     <Compile Include="Assets\Sources\Generated\UnitComponentGeneratedExtension.cs" />
+    <Compile Include="Assets\Sources\Generated\ViewComponentGeneratedExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Libs\DOTween\DOTween.XML" />
+    <None Include="Assets\Libs\DOTween\DOTween43.xml" />
+    <None Include="Assets\Libs\DOTween\DOTween46.xml" />
+    <None Include="Assets\Libs\DOTween\DOTween50.xml" />
+    <None Include="Assets\Libs\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Libs\DOTween\readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

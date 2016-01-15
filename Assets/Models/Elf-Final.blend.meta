@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 12dfe767770abd24b83f31f3e97e6a03
+timeCreated: 1452854280
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arrow
+    100002: Arrow_0
+    100004: bow
+    100006: DarkElf
+    100008: Elf
+    100010: //RootNode
+    100012: Head
+    100014: Hips
+    100016: LeftArm
+    100018: LeftFingerBase
+    100020: LeftFoot
+    100022: LeftForeArm
+    100024: LeftHand
+    100026: LeftHandIndex1
+    100028: LeftLeg
+    100030: LeftShoulder
+    100032: LeftToeBase
+    100034: LeftUpLeg
+    100036: LHipJoint
+    100038: LowerBack
+    100040: LThumb
+    100042: Neck
+    100044: Neck1
+    100046: quiver
+    100048: RHipJoint
+    100050: RightArm
+    100052: RightFingerBase
+    100054: RightFoot
+    100056: RightForeArm
+    100058: RightHand
+    100060: RightHandIndex1
+    100062: RightLeg
+    100064: RightShoulder
+    100066: RightToeBase
+    100068: RightUpLeg
+    100070: RThumb
+    100072: Spine
+    100074: Spine1
+    100076: Weapon_L
+    100078: Weapon_R
+    400000: Arrow
+    400002: Arrow_0
+    400004: bow
+    400006: DarkElf
+    400008: Elf
+    400010: //RootNode
+    400012: Head
+    400014: Hips
+    400016: LeftArm
+    400018: LeftFingerBase
+    400020: LeftFoot
+    400022: LeftForeArm
+    400024: LeftHand
+    400026: LeftHandIndex1
+    400028: LeftLeg
+    400030: LeftShoulder
+    400032: LeftToeBase
+    400034: LeftUpLeg
+    400036: LHipJoint
+    400038: LowerBack
+    400040: LThumb
+    400042: Neck
+    400044: Neck1
+    400046: quiver
+    400048: RHipJoint
+    400050: RightArm
+    400052: RightFingerBase
+    400054: RightFoot
+    400056: RightForeArm
+    400058: RightHand
+    400060: RightHandIndex1
+    400062: RightLeg
+    400064: RightShoulder
+    400066: RightToeBase
+    400068: RightUpLeg
+    400070: RThumb
+    400072: Spine
+    400074: Spine1
+    400076: Weapon_L
+    400078: Weapon_R
+    4300000: DarkElf
+    4300002: quiver
+    4300004: bow
+    4300006: Arrow
+    7400000: Default Take
+    7400002: Dance-lambada
+    7400004: Death-Backwards
+    7400006: idle
+    7400008: Laught
+    7400010: Run-flee
+    7400012: sad
+    7400014: Shoot-bow
+    7400016: sleep4-_fixed
+    7400018: Walk-sexy_-_fixed
+    9500000: //RootNode
+    13700000: Arrow
+    13700002: bow
+    13700004: DarkElf
+    13700006: quiver
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,9 +9,7 @@ public class CreateUnitsSystem : IInitializeSystem, ISetPool {
     {
         for(int i = 6; i > 0; i--)
         {
-            var e = _pool.CreateEntity()
-                .AddUnit("Unit " + i)
-                .AddTurnOrder(Random.Range(0, 100));
+            PoolExtension.CreateRandomUnit(_pool);
         }
     }
 
