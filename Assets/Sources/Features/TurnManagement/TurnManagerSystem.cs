@@ -10,9 +10,11 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
     List<Entity> managedUnits = new List<Entity>();
     int currentUnitIndex = 0;
 
+    int totalTurnsNumber = 1;
+
     public TriggerOnEvent trigger
     {
-        get { return Matcher.AllOf(Matcher.Input, Matcher.EndTurn).OnEntityAdded(); }
+        get { return Matcher.AnyOf(Matcher.EndTurn, Matcher.StartTurn).OnEntityRemoved(); }
     }
 
     public void SetPool(Pool pool)
@@ -22,6 +24,7 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
 
     public void Initialize()
     {
+        // Trie les unités par vitesse
         for(int i = 0; i < _group.count; i++)
         {
             Entity fastestEntity = _group.GetEntities()[0];
@@ -36,24 +39,50 @@ public class TurnManagerSystem : IInitializeSystem, IReactiveSystem, ISetPool
                 }
             }
             managedUnits.Add(fastestEntity);
-            Debug.Log(fastestEntity.unit.name + " // Speed : " + fastestEntity.turnOrder.speed);
         }
+
+        InitFirstTurn();
     }
 
     public void Execute(List<Entity> entities)
     {
         foreach (var e in entities)
         {
-            Debug.Log("Input caught : " + e.input.intent);
-            if(e.input.intent == InputIntent.FinishTurn)
+            // Si l'unit perd le component EndTurn
+            // Lorsque les actions de fin de tour sont terminées
+            if(!e.isEndTurn && e.isControlable)
             {
-                EndTurn();
+
+                InitNextTurn();
+            // Si l'unit prend le component StartTurn
+            // Dés l'execution des actions de début de tour
             }
         }
     }
 
-    void EndTurn()
+    void InitFirstTurn()
     {
-        managedUnits[currentUnitIndex].IsEndTurn(true);
+        Debug.Log("Tour " + totalTurnsNumber + " / " + "Unité " + (currentUnitIndex+1));
+        // Initialisation
+        managedUnits[currentUnitIndex].IsStartTurn(true);
+    }
+
+    void InitNextTurn()
+    {
+        NextUnitIndex();
+        managedUnits[currentUnitIndex].IsStartTurn(true);
+        Debug.Log("Tour " + totalTurnsNumber + " / " + "Unité " + (currentUnitIndex+1));
+    }
+
+    void NextUnitIndex()
+    {
+        if (currentUnitIndex +1 > managedUnits.Count-1)
+        {
+            currentUnitIndex = 0;
+            totalTurnsNumber++;
+        } else
+        {
+            currentUnitIndex++;
+        }
     }
 }
